@@ -17,9 +17,10 @@ app.set('view engine', 'hbs');
 app.set('views', 'views');
 
 app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
 app.use('/', homeRoutes);
-app.use('/add', coursesRoutes);
-app.use('/courses', addRoutes);
+app.use('/courses', coursesRoutes);
+app.use('/add', addRoutes);
 
 
 
