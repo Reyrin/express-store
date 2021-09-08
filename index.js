@@ -1,5 +1,6 @@
 const express = require('express');
 const exhbs = require('express-handlebars');
+const path = require('path');
 
 const homeRoutes = require('./routes/home');
 const coursesRoutes = require('./routes/courses');
